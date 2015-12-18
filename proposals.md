@@ -27,23 +27,23 @@ Ok, here we go...
 Root filesystem
 ---------------
 
-## squashfs+overlayfs
+### squashfs+overlayfs
 Proposed by:
 	* Michal Hrusecky
 
-## ext4
+### ext4
 
-## btrfs
+### btrfs
 
 Operating system
 ----------------
 
-## Debian/Raspbian
+### Debian/Raspbian
 
 Proposed by:
 	* Boris Rybalkin
 
-## Freedom-box
+### Freedom-box
 
 Supports Beaglebone, Cubiebox/Cubietruck, various Raspberry Pi models (including the RPi2) and others
 
@@ -52,14 +52,14 @@ The freedom-box project is an effort to move social networking and other central
 Proposed by:
     * Johan Ouwerkerk
 
-## ArchLinux ARM
+### ArchLinux ARM
 
 Supports BeagleBoard, Beaglebone Black, Cubie{board, board 2, truck} RPi{1,2}, ODROID-{U2,U3,X,X2,XU,XU3,XU4} and more
 
 Proposed by:
     * Petros Angelatos
 
-## TinyCore Linux
+### TinyCore Linux
 
 Runs from RAM, 15 seconds boot time, 100MB usage with Apache + PHP
 http://ska.ee/posts/2015/2015-12/2015-12-07_philecms_picore_eng
@@ -67,40 +67,40 @@ http://ska.ee/posts/2015/2015-12/2015-12-07_philecms_picore_eng
 Proposed by:
    * Artjom Tsarajev
 
-## openSUSE
+### openSUSE
 Proposed by:
    * Michal Hrušecký
 
 Packaging
 ---------
 
-## Packages
+### Packages
 
-### Raspbian
+#### Raspbian
 * Old version of owncloud (7.0)
 * Old version of PHP (5.6)
 
-### ArchLinux ARM
+#### ArchLinux ARM
 * Latest version of ownCloud (8.2)
 * Old version of PHP (5.6)
 
 Proposed by:
 	* Petros Angelatos
 
-### openSUSE
+#### openSUSE
 
-### TinyCore Linux
+#### TinyCore Linux
 
-## Containers
+### Containers
 
-### Docker
+#### Docker
 
-### systemd-nspawn
+#### systemd-nspawn
 
 Initial config
 --------------
 
-## mDNS (avahi)
+### mDNS (avahi)
 
 Use mDNS/DNS-SD (Avahi/Bonjour) to auto-publish the box to the local network. This would permit 'apps' to auto-discover the box. It will also allow a browser running on another computer on the local network to access the initial setup interface at a well-known address (for example owncloud.local).
 
@@ -113,7 +113,7 @@ Proposed by:
     * Thanos Tryfonidis
 	* Michal Hrušecký
 
-## IPv6 link-local addresses
+### IPv6 link-local addresses
 
 Note: Relies on client and local network support for IPv6.
 
@@ -124,7 +124,7 @@ This also uses a web interface to do the initial config but instead of using a m
 Proposed by:
     * Johan Ouwerkerk
 
-## WiFi Access point
+### WiFi Access point
 
 Note: This is implemented in the Prota OS project
 
@@ -133,7 +133,7 @@ Puts RPi with WiFi dongle into the AP mode, so users can find Pi in their WiFi S
 Proposed by:
     * Terence Park
 
-## Mobile application
+### Mobile application
 
 Note: This is implemented in the Syncloud project
 
@@ -147,13 +147,13 @@ Proposed by:
 HTTP server
 ----------
 
-## apache2
+### apache2
 
 Proposed by:
     * Jos Poortvliet
 	* Christian Rost
 
-## nginx
+### nginx
 
 Proposed by:
 	* Daniel Ripoll 
@@ -161,12 +161,12 @@ Proposed by:
 Database engine
 ---------------
 
-## MySQL
+### MySQL
 
 Proposed by:
 	* Jos Poortvliet
 
-## SQLite
+### SQLite
 
 Proposed by:
 	* Michal Hrusecky
@@ -174,12 +174,12 @@ Proposed by:
 Database storage
 ----------------
 
-## SD card
+### SD card
 
 Proposed by:
 	* Michal Hrusecky
 
-## Hard Disk
+### Hard Disk
 
 Proposed by:
 	* Jos Poortvliet
@@ -187,14 +187,14 @@ Proposed by:
 Caching
 -------
 
-## Redis
+### Redis
 
-## Plain PHP caching
+### Plain PHP caching
 
 External projects
 -----------------
 
-## Syncloud
+### Syncloud
 
 * Support for several major ARM SBCs (Raspberry Pi 2, Beagle Bone Black, Cubieboard 2, Cubietruck and ODROID XU3/XU4)
 * Debian based root partition
@@ -205,18 +205,18 @@ External projects
 Proposed by:
 	* Boris Rybalkin
 
-## onmydisk.org
+### onmydisk.org
 
-## Buildroot
-## FUSE over SSL
+### Buildroot
+### FUSE over SSL
 
 Proposed by:
     * Alexey Volkov
 
-## resin.io
+### resin.io
 
-### Yocto
-## Prota OS
+#### Yocto
+### Prota OS
  Prota provides a service called App Library, from which users can download and install pre-packaged applications to their Protas. There will be a OwnCloud application there.
 
  Prota has its own automation engine, sort of similar to IFTTT, but a lot more powerful as it runs on your own hardware (this means you can utilize Pi's GPIO and plug in any sensors of your choice).
@@ -231,7 +231,7 @@ Proposed by:
 Miscelaneous
 ------------
 
-## The general idea is to modify the current "Owncloud Sync" app to be the Control center of the WDSata+Raspberry PI+owncloud Hub.
+### The general idea is to modify the current "Owncloud Sync" app to be the Control center of the WDSata+Raspberry PI+owncloud Hub.
 
 1. We will be adding a button to the syncing software. When the user
 installs and lauches the software, he will be presented with a welcome
@@ -246,26 +246,26 @@ Proposed by:
     * Stathis Iosifidis
     * Thanos Tryfonidis
 
-## Samba server
+### Samba server
 	* Michal Hrušecký
     * Alex-P. Natsios
     * Salih Emin
     * Stathis Iosifidis
     * Thanos Tryfonidis
 
-##  ftp server sharing users database and allowing direct access to the files. Or maybe localhost mounted wdfs exported via ftp/ssh so rsync would be possible.
+###  ftp server sharing users database and allowing direct access to the files. Or maybe localhost mounted wdfs exported via ftp/ssh so rsync would be possible.
 	* Michal Hrušecký
 
-##  hot things like multiple boards support, host OS updates, data backup are not implemented yet. In collaboration with redis.io we could make it really good.
+###  hot things like multiple boards support, host OS updates, data backup are not implemented yet. In collaboration with redis.io we could make it really good.
     * Alexey Volkov
 
-## dynDNS
-## Antivirus (clamav) (mod_sec)
-## UPnP
-## Let's Encrypt SSL certs
-## ownBackup / backup solution
-## Automated Updates (Host OS) (ownCloud via updater)
+### dynDNS
+### Antivirus (clamav) (mod_sec)
+### UPnP
+### Let's Encrypt SSL certs
+### ownBackup / backup solution
+### Automated Updates (Host OS) (ownCloud via updater)
 	* Christian Rost
 
-## include IPv6 (either tunnel or maybe 6to4)
+### include IPv6 (either tunnel or maybe 6to4)
 	* Michal Hrušecký
