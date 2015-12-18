@@ -29,7 +29,7 @@ Root filesystem
 
 ### squashfs+overlayfs
 Proposed by:
-	* Michal Hrusecky
+* Michal Hrusecky
 
 ### ext4
 
@@ -41,7 +41,7 @@ Operating system
 ### Debian/Raspbian
 
 Proposed by:
-	* Boris Rybalkin
+* Boris Rybalkin
 
 ### Freedom-box
 
@@ -50,14 +50,14 @@ Supports Beaglebone, Cubiebox/Cubietruck, various Raspberry Pi models (including
 The freedom-box project is an effort to move social networking and other centralised services to a more P2P model that respects user freedom and gives the user control over where their data goes and, particularly, doesn't.
 
 Proposed by:
-    * Johan Ouwerkerk
+* Johan Ouwerkerk
 
 ### ArchLinux ARM
 
 Supports BeagleBoard, Beaglebone Black, Cubie{board, board 2, truck} RPi{1,2}, ODROID-{U2,U3,X,X2,XU,XU3,XU4} and more
 
 Proposed by:
-    * Petros Angelatos
+* Petros Angelatos
 
 ### TinyCore Linux
 
@@ -85,7 +85,7 @@ Packaging
 * Old version of PHP (5.6)
 
 Proposed by:
-	* Petros Angelatos
+* Petros Angelatos
 
 #### openSUSE
 
@@ -105,13 +105,13 @@ Initial config
 Use mDNS/DNS-SD (Avahi/Bonjour) to auto-publish the box to the local network. This would permit 'apps' to auto-discover the box. It will also allow a browser running on another computer on the local network to access the initial setup interface at a well-known address (for example owncloud.local).
 
 Proposed by:
-    * Alex-P. Natsios
-    * Johan Ouwerkerk
-    * Petros Angelatos
-    * Salih Emin
-    * Stathis Iosifidis
-    * Thanos Tryfonidis
-	* Michal Hrušecký
+* Alex-P. Natsios
+* Johan Ouwerkerk
+* Petros Angelatos
+* Salih Emin
+* Stathis Iosifidis
+* Thanos Tryfonidis
+* Michal Hrušecký
 
 ### IPv6 link-local addresses
 
@@ -122,7 +122,7 @@ Note: Raspberry Pis don't have printed MAC information, someone will have to boo
 This also uses a web interface to do the initial config but instead of using a mDNS domain it uses the MAC address of the device to generate a link-local IPv6 address and then connects to it. The user will initially visit a well known URL (for example pidrive.owncloud.org) which will host a simple HTML page where you enter the MAC address and then redirects you to the link-local IPv6 address.
 
 Proposed by:
-    * Johan Ouwerkerk
+* Johan Ouwerkerk
 
 ### WiFi Access point
 
@@ -131,7 +131,7 @@ Note: This is implemented in the Prota OS project
 Puts RPi with WiFi dongle into the AP mode, so users can find Pi in their WiFi SSID list and connect to it. Then, they open up a web browser to configure Pi's WiFi using aweb-based interface.
 
 Proposed by:
-    * Terence Park
+* Terence Park
 
 ### Mobile application
 
@@ -142,7 +142,7 @@ Note: This can be combined nicely with the Avahi option
 The user downloads a app on his android or iOS device to set up my ownCloud server. The app discovers the servers on the local network and presents setup and information interfaces. It shouldn't require prior technical knowledge to complete the setup.
 
 Proposed by:
-	* Mickaël Fourgeaud
+* Mickaël Fourgeaud
 
 HTTP server
 ----------
@@ -150,13 +150,13 @@ HTTP server
 ### apache2
 
 Proposed by:
-    * Jos Poortvliet
-	* Christian Rost
+* Jos Poortvliet
+* Christian Rost
 
 ### nginx
 
 Proposed by:
-	* Daniel Ripoll 
+* Daniel Ripoll 
 
 Database engine
 ---------------
@@ -164,12 +164,12 @@ Database engine
 ### MySQL
 
 Proposed by:
-	* Jos Poortvliet
+* Jos Poortvliet
 
 ### SQLite
 
 Proposed by:
-	* Michal Hrusecky
+* Michal Hrusecky
 
 Database storage
 ----------------
@@ -177,12 +177,12 @@ Database storage
 ### SD card
 
 Proposed by:
-	* Michal Hrusecky
+* Michal Hrusecky
 
 ### Hard Disk
 
 Proposed by:
-	* Jos Poortvliet
+* Jos Poortvliet
 
 Caching
 -------
@@ -203,7 +203,7 @@ External projects
 * UPnP and NAT-PMP protocols are used to map ports on the home router
 
 Proposed by:
-	* Boris Rybalkin
+* Boris Rybalkin
 
 ### onmydisk.org
 
@@ -211,7 +211,7 @@ Proposed by:
 ### FUSE over SSL
 
 Proposed by:
-    * Alexey Volkov
+* Alexey Volkov
 
 ### resin.io
 
@@ -226,7 +226,7 @@ Proposed by:
  2. Integrate ownCloud to Prota's automation engine.
 
 Proposed by:
-	* Terence Park
+* Terence Park
 
 Miscelaneous
 ------------
@@ -241,23 +241,23 @@ would be  to build a feature that will be linking the user's computer
 with the box (and adding it as a cloud drive option).
 
 Proposed by:
-    * Alex-P. Natsios
-    * Salih Emin
-    * Stathis Iosifidis
-    * Thanos Tryfonidis
+* Alex-P. Natsios
+* Salih Emin
+* Stathis Iosifidis
+* Thanos Tryfonidis
 
 ### Samba server
-	* Michal Hrušecký
-    * Alex-P. Natsios
-    * Salih Emin
-    * Stathis Iosifidis
-    * Thanos Tryfonidis
+* Michal Hrušecký
+* Alex-P. Natsios
+* Salih Emin
+* Stathis Iosifidis
+* Thanos Tryfonidis
 
 ###  ftp server sharing users database and allowing direct access to the files. Or maybe localhost mounted wdfs exported via ftp/ssh so rsync would be possible.
-	* Michal Hrušecký
+* Michal Hrušecký
 
 ###  hot things like multiple boards support, host OS updates, data backup are not implemented yet. In collaboration with redis.io we could make it really good.
-    * Alexey Volkov
+* Alexey Volkov
 
 ### dynDNS
 ### Antivirus (clamav) (mod_sec)
@@ -265,7 +265,7 @@ Proposed by:
 ### Let's Encrypt SSL certs
 ### ownBackup / backup solution
 ### Automated Updates (Host OS) (ownCloud via updater)
-	* Christian Rost
+* Christian Rost
 
 ### include IPv6 (either tunnel or maybe 6to4)
-	* Michal Hrušecký
+* Michal Hrušecký
